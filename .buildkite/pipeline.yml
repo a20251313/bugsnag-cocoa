@@ -80,7 +80,7 @@ steps:
   - label: macOS 10.13 unit tests
     timeout_in_minutes: 10
     agents:
-      queue: opensource-mac-cocoa-10.13
+      queue: opensource-mac-cocoa-10.13-test
     commands:
       - ./scripts/run-unit-tests.sh PLATFORM=macOS
     artifact_paths:
@@ -98,7 +98,7 @@ steps:
   - label: iOS 9 unit tests
     timeout_in_minutes: 10
     agents:
-      queue: opensource-mac-cocoa-10.13
+      queue: opensource-mac-cocoa-10.13-test
     commands:
       - ./scripts/run-unit-tests.sh PLATFORM=iOS OS=9.3 DEVICE=iPhone\ 5s
     artifact_paths:
@@ -116,7 +116,7 @@ steps:
   - label: tvOS 9 unit tests
     timeout_in_minutes: 10
     agents:
-      queue: opensource-mac-cocoa-10.13
+      queue: opensource-mac-cocoa-10.13-test
     commands:
       - ./scripts/run-unit-tests.sh PLATFORM=tvOS OS=9.2
     artifact_paths:
