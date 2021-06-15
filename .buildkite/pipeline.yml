@@ -17,6 +17,15 @@ steps:
   # Build
   #
 
+  - label: macOS 10.14 unit tests
+    timeout_in_minutes: 10
+    agents:
+      queue: server-test
+    commands:
+      - ./scripts/run-unit-tests.sh PLATFORM=macOS
+    artifact_paths:
+      - logs/*
+
   - label: Build cocoa IPA
     key: cocoa_fixture
     timeout_in_minutes: 20
