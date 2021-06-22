@@ -1,7 +1,7 @@
 version: '3.6'
 services:
   cocoa-maze-runner:
-    image: 855461928731.dkr.ecr.us-west-1.amazonaws.com/maze-runner-releases:latest-v5-cli
+    image: 855461928731.dkr.ecr.us-west-1.amazonaws.com/maze-runner:tms-file-logging
     environment:
       DEBUG:
       VERBOSE:
@@ -12,3 +12,4 @@ services:
     volumes:
       - ./features/fixtures/ios/output:/app/build
       - ./features/:/app/features/
+      - ./maze_output:/app/maze_output
