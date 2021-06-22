@@ -249,4 +249,4 @@ Feature: Barebone tests
     And the error payload field "events.0.device.freeMemory" is null
     And the error payload field "events.0.device.model" matches the test device model
     And the error payload field "events.0.device.totalMemory" is an integer
-    And the error payload field "events.0.threads" is an array with 0 elements
+    And the error payload field "events.0.threads" is an array with 1 elements
