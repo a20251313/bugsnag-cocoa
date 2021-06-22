@@ -136,7 +136,7 @@ steps:
     plugins:
       artifacts#v1.3.0:
         download: ["features/fixtures/ios/output/iOSTestApp.ipa"]
-        upload: ["maze_output/*"]
+        upload: ["maze_output/**/*"]
       docker-compose#v3.3.0:
         run: cocoa-maze-runner
         command:
